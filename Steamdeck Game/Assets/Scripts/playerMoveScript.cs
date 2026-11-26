@@ -13,7 +13,7 @@ public class playerMoveScript : MonoBehaviour
 
     private InputAction moveAction;
 
-    private Rigidbody rb;
+    private Rigidbody2D rb;
 
     [SerializeField] private float moveSpeed = 5f;
 
@@ -29,7 +29,7 @@ public class playerMoveScript : MonoBehaviour
             moveAction = InputSystem.actions.FindAction("Move Defense");
         }
 
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
 
     }
 
